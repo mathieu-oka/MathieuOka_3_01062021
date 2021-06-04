@@ -1,3 +1,11 @@
+body {
+  font-family: roboto;
+}
+
+.shrikhand {
+  font-family: Shrikhand;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1200px;
@@ -6,7 +14,6 @@
 header {
   display: flex;
   flex-direction: column;
-  padding: 0 10px;
   text-align: center;
 }
 header .localisation {
@@ -33,11 +40,10 @@ header .info .btn {
   margin-right: auto;
 }
 
-aside {
-  padding: 0 20px;
-}
-aside .case {
+aside .contain .case {
   display: flex;
+  align-items: center;
+  width: 300px;
 }
 
 .restaurants {

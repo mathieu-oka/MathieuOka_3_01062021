@@ -1,6 +1,11 @@
 @import './variables.scss';
 
-
+body{
+    font-family: roboto;
+}
+.shrikhand{
+    font-family: Shrikhand;
+}
 .container{
     margin: 0 auto;
     max-width: 1200px;
@@ -9,7 +14,6 @@
 header{
     display: flex;
     flex-direction: column;
-    padding: 0 10px;
     text-align: center;
 
     .localisation{
@@ -43,10 +47,19 @@ header{
 }
 
 aside{
-    padding: 0 20px;
-    .case{
-        display: flex;
+    .contain{
+        
+        
+        .case{
+            display: flex;
+            align-items: center;
+            
+            width: 300px;
+           
+        }
     }
+    
+
 }
 
 
