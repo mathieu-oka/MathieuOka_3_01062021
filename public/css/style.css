@@ -30,8 +30,8 @@ header .info {
   height: 200px;
 }
 header .info .btn {
-  background-color: violet;
-  border: 4px solid violet;
+  background-color: #9356DC;
+  border: 4px solid #9356DC;
   border-radius: 10rem;
   font-size: 20px;
   padding: 15px;
