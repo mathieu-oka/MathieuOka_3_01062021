@@ -17,7 +17,7 @@ header {
   text-align: center;
 }
 header .localisation {
-  background-color: #c0bdbd;
+  background-color: #eaeaea;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +26,7 @@ header .localisation p {
   margin-left: 10px;
 }
 header .info {
-  background-color: rgba(192, 192, 192, 0.397);
+  background-color: #f6f6f6;
   height: 200px;
 }
 header .info .btn {
@@ -43,12 +43,33 @@ header .info .btn {
 aside .contain .case {
   display: flex;
   align-items: center;
-  width: 300px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+aside .contain .case .number {
+  border: solid 2px #9356DC;
+  border-radius: 50px;
+  background-color: #9356DC;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  position: absolute;
+}
+aside .contain .case .text {
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  border: solid transparent;
+  box-shadow: 10px 5px 3px #eaeaea;
+  border-radius: 20px;
+  width: 350px;
+  padding: 10px 20px;
 }
 
 .restaurants {
-  background-color: rgba(192, 192, 192, 0.397);
-  padding: 0 20px;
+  background-color: #f6f6f6;
+  padding: 40px 20px;
 }
 .restaurants .container-rest {
   display: flex;
@@ -57,7 +78,7 @@ aside .contain .case {
 .restaurants article {
   background-color: white;
   border-radius: 20px;
-  height: 300px;
+  height: 250px;
   margin-bottom: 20px;
   box-shadow: 10px 5px 5px #d8d4d4;
 }
@@ -69,6 +90,9 @@ aside .contain .case {
 }
 .restaurants article h3, .restaurants article p {
   margin-left: 10px;
+}
+.restaurants article p {
+  margin-top: -10px;
 }
 
 footer {
