@@ -48,6 +48,9 @@ header .info .btn {
   margin-right: auto;
 }
 
+aside {
+  padding: 0 20px;
+}
 aside .contain {
   display: flex;
   flex-direction: column;
