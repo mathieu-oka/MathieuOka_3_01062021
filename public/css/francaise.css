@@ -1,0 +1,18 @@
+.body {
+  background-color: rgb 234, 234, 234;
+  font-family: roboto;
+}
+
+article {
+  background-color: white;
+  border-radius: 20px;
+  height: auto;
+  margin-bottom: 20px;
+  box-shadow: 10px 5px 5px #d8d4d4;
+}
+
+h1 {
+  color: red;
+}
+
+/*# sourceMappingURL=francaise.css.map */
