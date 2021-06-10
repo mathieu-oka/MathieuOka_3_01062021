@@ -39,12 +39,12 @@ header{
             border: 4px solid $color-primaire;
             color: white;
             border-radius: 10rem;
-            font-size: 20px;
-            padding: 15px;
             width: 300px;
             margin-left: auto;
             margin-right: auto;
-            
+            p{
+                color: white;
+            }
            
         }
     }

@@ -1,18 +1,66 @@
-.body {
-  background-color: rgb 234, 234, 234;
+body {
   font-family: roboto;
+}
+
+header .shrikhand {
+  text-align: center;
+  font-family: Shrikhand;
+}
+header .shrikhand h1 {
+  margin: 0;
+}
+header img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+section {
+  background-color: #eaeaea;
+  padding: 20px;
+  border-radius: 30px 30px 0 0;
+  margin-top: -35px;
+  position: relative;
+  z-index: 2;
+}
+section .big-title {
+  font-family: Shrikhand;
+}
+section .btn {
+  background-color: #9356DC;
+  border: 4px solid #9356DC;
+  color: white;
+  border-radius: 10rem;
+  width: 130px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 article {
   background-color: white;
   border-radius: 20px;
   height: auto;
+  padding: 1px 10px;
   margin-bottom: 20px;
   box-shadow: 10px 5px 5px #d8d4d4;
 }
 
-h1 {
-  color: red;
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+footer ul li {
+  margin-bottom: 5px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: white;
 }
 
 /*# sourceMappingURL=francaise.css.map */

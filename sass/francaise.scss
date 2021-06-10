@@ -1,12 +1,71 @@
-.body{
-    background-color: rgb (234, 234, 234);
+@import './variables.scss';
+
+body{
     font-family: roboto;
 }
+header{
+    .shrikhand {
+        text-align: center;
+        font-family: Shrikhand;
+        
+        h1{
+            margin: 0;
+        }
+    }
+    
+    img{
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+        
+    }
+}
+section{
+    background-color: rgb(234, 234, 234);
+    padding: 20px;
+    border-radius: 30px 30px 0 0;
+    margin-top: -35px;
+    position: relative;
+    z-index: 2;
+    .big-title{
+        font-family: Shrikhand;
+    }
+    .btn {
+        background-color: $color-primaire;
+        border: 4px solid $color-primaire;
+        color: white;
+        border-radius: 10rem;
+        width: 130px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        
+        
+    }
+}
 article{
-    background-color: white;
+        background-color: white;
         border-radius: 20px;
         height: auto;
+        padding: 1px 10px;
         margin-bottom: 20px;
         box-shadow: 10px 5px 5px rgb(216, 212, 212);
 }
-h1{color:red;}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+        ul{
+            list-style: none;
+            padding: 0;
+            li{
+                margin-bottom: 5px;
+                a{
+                    text-decoration: none;
+                    color:white;
+                }
+            }
+        }
+
+}
