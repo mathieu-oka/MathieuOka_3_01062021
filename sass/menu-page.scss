@@ -1,22 +1,11 @@
-@import './variables.scss';
 
-body{
-    font-family: roboto;
-}
-.shrikhand {
-    
-    font-family: Shrikhand;
 
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-header{ 
+header.menu{ 
 
     .head-title{
         display: flex;
         align-items: center;
+        justify-content: space-between;
         margin-left: 20px;
         font-family: Shrikhand;
             h1{
@@ -43,7 +32,7 @@ section{
     .big-title{
         font-family: Shrikhand;
     }
-    .btn {
+    .btn-menu {
         background-color: $color-primaire;
         border: 4px solid $color-primaire;
         color: white;
@@ -56,7 +45,7 @@ section{
         
     }
 }
-article{
+article.carte-item{
         background-color: white;
         border-radius: 20px;
         height: auto;
@@ -65,20 +54,3 @@ article{
         box-shadow: 10px 5px 5px rgb(216, 212, 212);
 }
 
-footer{
-    background-color: black;
-    color: white;
-    padding: 20px;
-        ul{
-            list-style: none;
-            padding: 0;
-            li{
-                margin-bottom: 5px;
-                a{
-                    text-decoration: none;
-                    color:white;
-                }
-            }
-        }
-
-}

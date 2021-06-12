@@ -1,5 +1,53 @@
+header.menu .head-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+  font-family: Shrikhand;
+}
+header.menu .head-title h1 {
+  margin: 0 auto;
+}
+header.menu img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+section {
+  background-color: #eaeaea;
+  padding: 20px 20px 100px 20px;
+  border-radius: 30px 30px 0 0;
+  margin-top: -35px;
+  position: relative;
+  z-index: 2;
+}
+section .big-title {
+  font-family: Shrikhand;
+}
+section .btn-menu {
+  background-color: #9356DC;
+  border: 4px solid #9356DC;
+  color: white;
+  border-radius: 10rem;
+  width: 130px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article.carte-item {
+  background-color: white;
+  border-radius: 20px;
+  height: auto;
+  padding: 1px 10px;
+  margin-bottom: 20px;
+  box-shadow: 10px 5px 5px #d8d4d4;
+}
+
 body {
   font-family: roboto;
+  margin: 0;
 }
 
 .shrikhand {
