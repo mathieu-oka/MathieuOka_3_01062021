@@ -192,7 +192,29 @@ footer ul li a {
   color: white;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 1199px) {
+  body h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  body aside .fonction .contain {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  body aside .fonction .contain .text {
+    width: 300px;
+  }
+  body .restaurants .container-rest {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  body .restaurants .container-rest article {
+    width: 250px;
+  }
+}
+@media all and (min-width: 767px) and (max-width: 1198px) {
   body h2 {
     text-align: center;
     margin-bottom: 40px;
@@ -200,21 +222,21 @@ footer ul li a {
 
   aside .fonction .contain {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
   aside .fonction .contain .text {
-    width: 300px;
+    width: 250px;
   }
 
   .restaurants .container-rest {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
   }
   .restaurants .container-rest article {
-    width: 250px;
+    width: 400px;
   }
 }
-/* test css une page */
 
 /*# sourceMappingURL=style.css.map */

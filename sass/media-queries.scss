@@ -1,37 +1,76 @@
-@media all and (min-width: 768px){
+@media all and (min-width: 1199px){
 
 body{
     h2{
         text-align: center;
         margin-bottom: 40px;
     }
-}
-aside .fonction{
+    aside .fonction{
     
-    .contain{
-        flex-direction: row;
-        justify-content: space-between;
+        .contain{
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            
+            .text{
+                width:300px ;
+            }
+        }
+    
         
-        .text{
-            width: 300px ;
+    }
+    
+    .restaurants{
+        .container-rest{
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            
+            
+    
+            article{
+                width: 250px;
+            }
+        }
+    }
+    
+    }
+}
+
+
+@media all and (min-width: 767px) and (max-width: 1198px){
+
+    body{
+        h2{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
+    aside .fonction{
+        .contain{
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            .text{
+                width:250px ;
+            }
+            
         }
     }
 
+    .restaurants{
+        .container-rest{
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            
+            
     
-}
-
-.restaurants{
-    .container-rest{
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        
-        
-
-        article{
-            width: 250px;
+            article{
+                width: 400px;
+            }
         }
     }
-}
-
+    
+    
 }
