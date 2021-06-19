@@ -192,6 +192,29 @@ footer ul li a {
   color: white;
 }
 
+@media all and (min-width: 768px) {
+  body h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  aside .fonction .contain {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  aside .fonction .contain .text {
+    width: 300px;
+  }
+
+  .restaurants .container-rest {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .restaurants .container-rest article {
+    width: 250px;
+  }
+}
 /* test css une page */
 
 /*# sourceMappingURL=style.css.map */
