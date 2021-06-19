@@ -213,6 +213,19 @@ footer ul li a {
   body .restaurants .container-rest article {
     width: 250px;
   }
+  body .big-title {
+    text-align: center;
+  }
+  body .menu-card {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  body .menu-card h4 {
+    text-align: center;
+  }
+  body article.carte-item {
+    width: 350px;
+  }
 }
 @media all and (min-width: 767px) and (max-width: 1198px) {
   body h2 {

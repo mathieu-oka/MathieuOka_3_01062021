@@ -34,6 +34,23 @@ body{
         }
     }
     
+    .big-title{
+        text-align: center;
+    }
+    .menu-card{
+        display: flex;
+        justify-content: space-evenly;
+        h4{
+            text-align: center;
+        }
+    }
+    article.carte-item{
+        width: 350px;
+        
+    }
+
+
+
     }
 }
 
