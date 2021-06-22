@@ -26,8 +26,9 @@ section.menu .big-title {
   font-family: Shrikhand;
 }
 section.menu .btn-menu {
-  background-color: #9356DC;
-  border: 4px solid #9356DC;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: 2px solid #f6f6f6;
+  box-shadow: 10px 5px 3px #eaeaea;
   color: white;
   border-radius: 10rem;
   width: 130px;
@@ -87,8 +88,9 @@ header .info p {
   color: grey;
 }
 header .info .btn {
-  background-color: #9356DC;
-  border: 4px solid #9356DC;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: 2px solid #f6f6f6;
+  box-shadow: 10px 5px 3px #eaeaea;
   color: white;
   border-radius: 10rem;
   width: 300px;

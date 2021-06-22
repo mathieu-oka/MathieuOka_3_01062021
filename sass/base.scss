@@ -38,8 +38,9 @@ header{
             color: grey;
         }
         .btn {
-            background-color: $color-primaire;
-            border: 4px solid $color-primaire;
+            background: linear-gradient($color-secondaire, $color-primaire);
+            border: 2px solid rgba(246, 246, 246);
+            box-shadow: 10px 5px 3px rgb(234, 234, 234);
             color: white;
             border-radius: 10rem;
             width: 300px;
