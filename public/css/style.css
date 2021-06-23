@@ -36,6 +36,7 @@ section.menu .btn-menu {
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
+  padding: 5px 50px;
 }
 
 article.carte-item {
@@ -190,9 +191,22 @@ aside .contain .case .text i {
   right: 20px;
   top: 20px;
 }
+.restaurants article i {
+  position: absolute;
+  z-index: 2;
+  right: 40px;
+  bottom: 30px;
+  font-size: 30px;
+}
+.restaurants article .on {
+  color: transparent;
+}
+.restaurants article .on:hover {
+  color: #9356DC;
+}
 
 footer {
-  background-color: black;
+  background: black;
   color: white;
   padding: 20px;
 }

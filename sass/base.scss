@@ -1,3 +1,4 @@
+@import './variables.scss';
 body{
     font-family: roboto;
     margin: 0;
@@ -157,35 +158,51 @@ aside{
             margin-top: -10px;
         }
 
-        .new {
+            .new {
 
-            p{
-                border: 2px solid $color-tertiaire;
-                background-color: $color-tertiaire;
-                color: #009480;
-                font-family: roboto;
-                font-weight: bold;
-                width: 100px;
-                text-align: center;
-                position: absolute;
-                z-index: 2;
-                right: 20px;
-                top: 20px;
-                
-                
-                
-                
-                
-                
+                p{
+                    border: 2px solid $color-tertiaire;
+                    background-color: $color-tertiaire;
+                    color: #009480;
+                    font-family: roboto;
+                    font-weight: bold;
+                    width: 100px;
+                    text-align: center;
+                    position: absolute;
+                    z-index: 2;
+                    right: 20px;
+                    top: 20px;
+                    
+                }
+            }
+
+
+        i{
+            position: absolute;
+            z-index: 2;
+            right: 40px;
+            bottom: 30px;
+            font-size: 30px;
+            
+            
+
+        }    
+        
+        .on{
+            
+            color:transparent;
+            &:hover{
+                color: $color-primaire;
             }
         }
+
     }
 
     
 }
 
 footer{
-    background-color: black;
+    background: black;
     color: white;
     padding: 20px;
         ul{
