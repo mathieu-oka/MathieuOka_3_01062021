@@ -97,6 +97,29 @@ header .info .btn {
   width: 300px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+header .info .btn:hover {
+  border-radius: 25px;
+}
+header .info .btn:hover::after {
+  border-radius: 25px;
+  opacity: 1;
+}
+header .info .btn::after {
+  border-radius: 25px;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(circle, #ff93e1 0%, #782cd3 100%);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 header .info .btn p {
   color: white;
