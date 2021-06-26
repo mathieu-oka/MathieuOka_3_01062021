@@ -46,8 +46,29 @@ article.carte-item {
   padding: 1px 10px;
   margin-bottom: 20px;
   box-shadow: 10px 5px 5px #d8d4d4;
+  opacity: 0;
+  animation: menuslide 1s forwards;
+}
+article.carte-item.delay1 {
+  animation-delay: 0.5s;
+}
+article.carte-item.delay2 {
+  animation-delay: 1s;
+}
+article.carte-item.delay3 {
+  animation-delay: 1.5s;
 }
 
+@keyframes menuslide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 body {
   font-family: roboto;
   margin: 0;
@@ -225,6 +246,7 @@ aside .contain .case .text i {
   color: transparent;
 }
 .restaurants article .on:hover {
+  transition: 0, 3s;
   color: #9356DC;
 }
 
