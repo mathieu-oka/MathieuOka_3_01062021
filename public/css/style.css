@@ -24,6 +24,12 @@ section.menu {
 }
 section.menu .big-title {
   font-family: Shrikhand;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.menu .big-title i {
+  font-size: 30px;
 }
 section.menu .btn-menu {
   background: linear-gradient(#FF79DA, #9356DC);
@@ -43,9 +49,13 @@ article.carte-item {
   background-color: white;
   border-radius: 20px;
   height: auto;
-  padding: 1px 10px;
+  padding: 0 0 0 10px;
   margin-bottom: 20px;
+  display: flex;
   box-shadow: 10px 5px 5px #d8d4d4;
+  white-space: nowrap;
+  overflow: hidden;
+  min-width: 0;
   opacity: 0;
   animation: menuslide 1s forwards;
 }
@@ -58,7 +68,33 @@ article.carte-item.delay2 {
 article.carte-item.delay3 {
   animation-delay: 1.5s;
 }
+article.carte-item:hover .check {
+  animation: checkslide 0.5s forwards;
+}
+article.carte-item:hover i {
+  animation: checkrotate 0.5s forwards;
+}
 
+@keyframes checkslide {
+  from {
+    opacity: 0;
+    width: 0;
+  }
+  to {
+    opacity: 1;
+    width: 150px;
+  }
+}
+@keyframes checkrotate {
+  from {
+    transform: rotate(0);
+    font-size: 35px;
+  }
+  to {
+    font-size: 35px;
+    transform: rotate(360deg);
+  }
+}
 @keyframes menuslide {
   from {
     opacity: 0;
@@ -69,6 +105,34 @@ article.carte-item.delay3 {
     transform: translateY(0);
   }
 }
+article .text {
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  min-width: 0;
+}
+
+article .price {
+  display: flex;
+  align-items: flex-end;
+  padding: 0 20px;
+}
+
+article .check {
+  display: flex;
+  align-items: center;
+  background-color: #99E2D0;
+  width: 0px;
+  border-radius: 0 20px 20px 0;
+}
+article .check i {
+  color: white;
+  font-size: 0px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body {
   font-family: roboto;
   margin: 0;
@@ -246,7 +310,7 @@ aside .contain .case .text i {
   color: transparent;
 }
 .restaurants article .on:hover {
-  transition: 0, 3s;
+  transition: 0.5s;
   color: #9356DC;
 }
 
