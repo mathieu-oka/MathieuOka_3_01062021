@@ -257,19 +257,18 @@ aside{
             right: 40px;
             bottom: 30px;
             font-size: 30px;
-            background: chartreuse;
+            
             
             
 
         }    
         
         .on{
-            animation: heart 10s forwards;
-            
-            color: $color-primaire;
-            &:hover{
-                
-                
+            opacity: 0;
+            &:hover, a:active{
+                transition: 0.5s;
+                color: $color-primaire;
+                opacity: 1;
                 
             }
         }
@@ -278,21 +277,7 @@ aside{
 
     
 }
-@keyframes heart{
-    from{
-        transform: scaleX(0);
-        transform-origin: top;
-        opacity: 0;
-        
-    }
-    to{
-        transform: scaleX(1,3);
-        transform-origin: top;
-        opacity: 1;
-        
-        
-    }
-   }
+
 
 footer{
     background: black;
