@@ -65,7 +65,8 @@ header{
                       right: 0;
                       bottom: 0;
                       left: 0;
-                      background: radial-gradient(circle, lighten($color-secondaire, 5) 0%, darken($color-primaire, 10) 100%);
+                      background: lighten($color-secondaire, 1);
+                      box-shadow: 10px 5px 3px darken(rgb(234, 234, 234), 9);
                       opacity: 0;
                       z-index: -1;
                       transition: opacity 250ms;

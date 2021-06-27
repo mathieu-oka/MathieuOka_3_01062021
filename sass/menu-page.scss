@@ -32,11 +32,28 @@ section.menu{
     .big-title{
         font-family: Shrikhand;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
+        .heart{
+            display: flex;
+        }
         i{
             font-size: 30px;
+            
+            
+        }    
+        
+        .on{
+            margin-left: -30px;
+            opacity: 0;
+            &:hover, a:active{
+                transition: 0.5s;
+                color: $color-primaire;
+                opacity: 1;
+                
+            }
         }
+        
     }
     .btn-menu {
         background: linear-gradient($color-secondaire, $color-primaire);
@@ -50,6 +67,31 @@ section.menu{
         margin-right: auto;
         margin-top: 50px;
         padding: 5px 50px;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+
+        &:hover {
+            border-radius: 25px;
+              &::after {
+                border-radius: 25px;
+                  opacity: 1;
+              }
+            }
+            &::after {
+                border-radius: 25px;
+                  content: "";
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  bottom: 0;
+                  left: 0;
+                  background: lighten($color-secondaire, 1);
+                  box-shadow: 10px 5px 3px darken(rgb(234, 234, 234), 9);
+                  opacity: 0;
+                  z-index: -1;
+                  transition: opacity 250ms;
+              }
         
         
     }
@@ -62,10 +104,6 @@ article.carte-item{
         margin-bottom: 20px;
         display: flex;
         box-shadow: 10px 5px 5px rgb(216, 212, 212);
-        white-space: nowrap;
-        
-        overflow: hidden;
-        min-width: 0;
         opacity: 0;
         animation:menuslide 1s forwards;
         &.delay1{
@@ -80,11 +118,11 @@ article.carte-item{
 
         &:hover .check{
 
-            animation:checkslide 0.5s forwards;
+            animation:checkslide 0.5s both;
             
         }
         &:hover i {
-            animation: checkrotate 0.5s forwards;
+            animation: checkrotate 0.5s both;
     
         }
 }
@@ -93,14 +131,10 @@ article.carte-item{
     from{
         opacity: 0;
         width: 0;
-        
     }
-    to{
-        
+    to{ 
         opacity: 1;
         width: 150px;
-    
-        
     }
 }
 
@@ -108,12 +142,10 @@ article.carte-item{
     from{
         transform: rotate(0);
         font-size: 35px;
-        
     }
     to{
         font-size: 35px;
         transform: rotate(360deg);
-        
     }
 }
 
@@ -134,10 +166,8 @@ article .text{
     flex-grow: 1;
     white-space: nowrap;
     overflow: hidden;
-    min-width: 0;
-    
+    text-overflow: ellipsis;
 
-    
 }
 
 article .price{
@@ -151,6 +181,7 @@ article .check{
     background-color: $color-tertiaire;
     width: 0px;
     border-radius: 0 20px 20px 0;
+    max-width: 300px;
     
     
     i{
@@ -159,8 +190,6 @@ article .check{
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        
-         
     }
     
 
