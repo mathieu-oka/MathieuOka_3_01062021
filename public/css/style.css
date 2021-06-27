@@ -84,11 +84,14 @@ section.menu .btn-menu::after {
 article.carte-item {
   background-color: white;
   border-radius: 20px;
-  height: auto;
+  height: 100px;
   padding: 0 0 0 10px;
-  position: relative;
+  height: auto;
   margin-bottom: 20px;
   display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   box-shadow: 10px 5px 5px #d8d4d4;
   opacity: 0;
   animation: menuslide 1s forwards;
@@ -139,7 +142,7 @@ article.carte-item:hover i {
     transform: translateY(0);
   }
 }
-article .text {
+article .text, h3, p {
   flex-grow: 1;
   white-space: nowrap;
   overflow: hidden;
@@ -181,7 +184,7 @@ body {
   z-index: 3;
   width: 100%;
   height: 135%;
-  animation: load-back 10s both;
+  animation: load-back 3s both;
 }
 .loader i {
   font-size: 100px;
@@ -379,15 +382,24 @@ aside .contain .case .text i {
   right: 40px;
   bottom: 30px;
   font-size: 30px;
+  background: chartreuse;
 }
 .restaurants article .on {
-  color: transparent;
-}
-.restaurants article .on:hover {
-  transition: 0.5s;
+  animation: heart 10s forwards;
   color: #9356DC;
 }
-
+@keyframes heart {
+  from {
+    transform: scaleX(0);
+    transform-origin: top;
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1, 3);
+    transform-origin: top;
+    opacity: 1;
+  }
+}
 footer {
   background: black;
   color: white;

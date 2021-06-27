@@ -99,11 +99,14 @@ section.menu{
 article.carte-item{
         background-color: white;
         border-radius: 20px;
-        height: auto;
+        height: 100px;
         padding: 0 0 0 10px;
-        position: relative;
+        height: auto;
         margin-bottom: 20px;
         display: flex;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         box-shadow: 10px 5px 5px rgb(216, 212, 212);
         opacity: 0;
         animation:menuslide 1s forwards;
@@ -163,7 +166,7 @@ article.carte-item{
   }
 
 
-article .text{
+article .text, h3, p{
     flex-grow: 1;
     white-space: nowrap;
     overflow: hidden;
