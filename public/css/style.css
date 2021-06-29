@@ -346,6 +346,14 @@ aside .contain .case .text {
   border-radius: 20px;
   width: 350px;
   padding: 10px 20px;
+  transition-delay: 0.3;
+}
+aside .contain .case .text:hover {
+  background-color: #f5edff;
+  color: black;
+}
+aside .contain .case .text:hover i {
+  color: #9356DC;
 }
 aside .contain .case .text p {
   margin-left: 20px;
@@ -371,28 +379,6 @@ aside .contain .case .text i {
   margin-bottom: 20px;
   box-shadow: 10px 5px 5px #d8d4d4;
   position: relative;
-  /*       i{
-             position: absolute;
-             z-index: 2;
-             right: 40px;
-             bottom: 30px;
-             font-size: 30px;
-
-
-
-
-         }    
-
-         .on{
-
-             opacity: 0;
-             &:hover, a:active{
-                 transition: 0.5s;
-                 color: $color-primaire;
-                 opacity: 1;
-
-             }
-         }*/
 }
 .restaurants article img {
   height: 65%;
@@ -445,12 +431,9 @@ aside .contain .case .text i {
 }
 
 footer {
-  background: black;
+  background: #353535;
   color: white;
   padding: 20px;
-}
-footer p {
-  font-weight: bold;
 }
 footer ul {
   list-style: none;

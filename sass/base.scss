@@ -177,6 +177,16 @@ aside{
                 border-radius: 20px;
                 width: 350px;
                 padding: 10px 20px;
+                transition-delay: 0.3;
+
+                &:hover{
+                    background-color:#f5edff;
+                    color: black;
+                    i{
+                        color: $color-primaire;
+                    }
+                    
+                }
                 
                p{
                    margin-left: 20px;
@@ -280,28 +290,6 @@ aside{
             }
         }
 
- /*       i{
-            position: absolute;
-            z-index: 2;
-            right: 40px;
-            bottom: 30px;
-            font-size: 30px;
-            
-            
-            
-
-        }    
-        
-        .on{
-            
-            opacity: 0;
-            &:hover, a:active{
-                transition: 0.5s;
-                color: $color-primaire;
-                opacity: 1;
-                
-            }
-        }*/
 
     }
 
@@ -310,12 +298,10 @@ aside{
 
 
 footer{
-    background: black;
+    background: rgb(53,53,53);
     color: white;
     padding: 20px;
-    p{
-        font-weight: bold;
-    }
+    
         ul{
             list-style: none;
             padding: 0;
