@@ -249,6 +249,9 @@ header .info {
 header .info p {
   color: grey;
 }
+header .info h3 {
+  font-weight: bold;
+}
 header .info .btn {
   background: linear-gradient(#FF79DA, #9356DC);
   border: 2px solid #f6f6f6;
@@ -427,6 +430,9 @@ footer {
   background: black;
   color: white;
   padding: 20px;
+}
+footer p {
+  font-weight: bold;
 }
 footer ul {
   list-style: none;

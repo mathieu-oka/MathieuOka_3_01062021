@@ -90,6 +90,9 @@ header{
         p{
             color: grey;
         }
+        h3{
+            font-weight: bold;
+        }
         .btn {
             background: linear-gradient($color-secondaire, $color-primaire);
             border: 2px solid rgba(246, 246, 246);
@@ -310,6 +313,9 @@ footer{
     background: black;
     color: white;
     padding: 20px;
+    p{
+        font-weight: bold;
+    }
         ul{
             list-style: none;
             padding: 0;
