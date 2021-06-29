@@ -43,6 +43,24 @@ section.menu .big-title .on:hover, section.menu .big-title .on a:active {
   color: #9356DC;
   opacity: 1;
 }
+section.menu .sub {
+  margin-top: -20px;
+  width: 2.5rem;
+  border-top: 4px solid #99E2D0;
+  padding-bottom: 20px;
+}
+section.menu .sub1 {
+  margin-top: -20px;
+  width: 2.5rem;
+  border-top: 4px solid #99E2D0;
+  padding-bottom: 20px;
+}
+section.menu .sub2 {
+  margin-top: -20px;
+  width: 2.5rem;
+  border-top: 4px solid #99E2D0;
+  padding-bottom: 20px;
+}
 section.menu .btn-menu {
   background: linear-gradient(#FF79DA, #9356DC);
   border: 2px solid #f6f6f6;
@@ -469,6 +487,18 @@ footer ul li a {
   }
   body .big-title {
     text-align: center;
+  }
+  body .sub {
+    margin-left: 145px;
+    margin-right: auto;
+  }
+  body .sub1 {
+    margin-left: 152px;
+    margin-right: auto;
+  }
+  body .sub2 {
+    margin-left: 142px;
+    margin-right: auto;
   }
   body .menu-card {
     display: flex;

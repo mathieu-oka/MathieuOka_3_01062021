@@ -55,6 +55,25 @@ section.menu{
         }
         
     }
+
+    .sub{
+        margin-top: -20px;
+        width: 2.5rem;
+        border-top: 4px solid $color-tertiaire;
+        padding-bottom: 20px;
+    }
+    .sub1{
+        margin-top: -20px;
+        width: 2.5rem;
+        border-top: 4px solid $color-tertiaire;
+        padding-bottom: 20px;
+    }
+    .sub2{
+        margin-top: -20px;
+        width: 2.5rem;
+        border-top: 4px solid $color-tertiaire;
+        padding-bottom: 20px;
+    }
     .btn-menu {
         background: linear-gradient($color-secondaire, $color-primaire);
         border: 2px solid rgba(246, 246, 246);
