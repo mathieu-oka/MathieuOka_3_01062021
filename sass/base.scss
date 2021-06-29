@@ -150,7 +150,7 @@ aside{
             .number{
                 display: flex;
                 justify-content: space-around;
-                border: solid 2px $color-primaire;
+                border: solid 2px transparent;
                 border-radius: 50px;
                 background-color: $color-primaire;
                 height: 20px;
@@ -234,7 +234,7 @@ aside{
             .new {
 
                 p{
-                    border: 2px solid $color-tertiaire;
+                    border: 2px solid transparent;
                     background-color: $color-tertiaire;
                     color: #009480;
                     font-family: roboto;
