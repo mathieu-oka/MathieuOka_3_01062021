@@ -350,6 +350,28 @@ aside .contain .case .text i {
   margin-bottom: 20px;
   box-shadow: 10px 5px 5px #d8d4d4;
   position: relative;
+  /*       i{
+             position: absolute;
+             z-index: 2;
+             right: 40px;
+             bottom: 30px;
+             font-size: 30px;
+
+
+
+
+         }    
+
+         .on{
+
+             opacity: 0;
+             &:hover, a:active{
+                 transition: 0.5s;
+                 color: $color-primaire;
+                 opacity: 1;
+
+             }
+         }*/
 }
 .restaurants article img {
   height: 65%;
@@ -376,19 +398,28 @@ aside .contain .case .text i {
   right: 20px;
   top: 20px;
 }
-.restaurants article i {
-  position: absolute;
-  z-index: 2;
-  right: 40px;
-  bottom: 30px;
+.restaurants article .info-card {
+  display: flex;
+  justify-content: space-between;
+}
+.restaurants article .info-card .heart-card {
+  display: flex;
+  width: 70px;
+  height: 100px;
+}
+.restaurants article .info-card .heart-card i {
   font-size: 30px;
+  margin-top: 25px;
 }
-.restaurants article .on {
+.restaurants article .info-card .heart-card .off {
+  margin-right: -30px;
+}
+.restaurants article .info-card .heart-card .on {
   opacity: 0;
-}
-.restaurants article .on:hover, .restaurants article .on a:active {
-  transition: 0.5s;
   color: #9356DC;
+  transition: 0.5s;
+}
+.restaurants article .info-card .heart-card .on:hover, .restaurants article .info-card .heart-card .on a:active {
   opacity: 1;
 }
 

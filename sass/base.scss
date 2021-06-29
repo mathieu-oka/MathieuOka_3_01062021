@@ -212,19 +212,13 @@ aside{
         height: 250px;
         margin-bottom: 20px;
         box-shadow: 10px 5px 5px rgb(216, 212, 212);
-
         position: relative;
-        
-
         
         img{
             height: 65%;
             width: 100%;
             object-fit: cover;
             border-radius: 20px 20px 0 0;
-            
-            
-
         }
         h3,p{
             margin-left: 10px;
@@ -251,9 +245,39 @@ aside{
                     
                 }
             }
+        .info-card{
+            display: flex;
+            justify-content: space-between;
 
+            .heart-card{
+               display: flex;
+               width: 70px;
+               height: 100px;
+               
+               i{
+                   font-size: 30px;
+                   margin-top: 25px;
+                   
 
-        i{
+               }
+               .off{
+                   margin-right: -30px;
+               }
+               .on{
+                    opacity: 0;
+                    color: $color-primaire;
+                    transition: 0.5s;
+                    &:hover, a:active{
+                    
+                        opacity: 1;
+                        
+                    }
+                }
+
+            }
+        }
+
+ /*       i{
             position: absolute;
             z-index: 2;
             right: 40px;
@@ -266,6 +290,7 @@ aside{
         }    
         
         .on{
+            
             opacity: 0;
             &:hover, a:active{
                 transition: 0.5s;
@@ -273,11 +298,11 @@ aside{
                 opacity: 1;
                 
             }
-        }
+        }*/
 
     }
 
-    
+ 
 }
 
 
