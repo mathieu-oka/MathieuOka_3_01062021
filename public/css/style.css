@@ -346,7 +346,7 @@ aside .contain .case .text {
   border-radius: 20px;
   width: 350px;
   padding: 10px 20px;
-  transition-delay: 0.3;
+  transition-delay: 250ms;
 }
 aside .contain .case .text:hover {
   background-color: #f5edff;
