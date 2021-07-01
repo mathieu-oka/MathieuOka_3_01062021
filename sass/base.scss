@@ -260,7 +260,12 @@ aside{
             }
         .info-card{
             display: flex;
-            justify-content: space-between;
+            
+            .text-card{
+                
+                flex-grow: 1;
+            }
+
 
             .heart-card{
                display: flex;

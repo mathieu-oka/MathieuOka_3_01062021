@@ -407,7 +407,9 @@ aside .contain .case .text i {
 }
 .restaurants article .info-card {
   display: flex;
-  justify-content: space-between;
+}
+.restaurants article .info-card .text-card {
+  flex-grow: 1;
 }
 .restaurants article .info-card .heart-card {
   display: flex;
